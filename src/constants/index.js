@@ -2,18 +2,14 @@ import {
   benefitIcon1,
   benefitIcon2,
   benefitIcon3,
-  benefitIcon4,
   benefitImage2,
   chromecast,
   disc02,
   html,
-  discordBlack,
-  facebook,
   css,
   file02,
   javascript,
   homeSmile,
-  instagram,
   notification2,
   notification3,
   notification4,
@@ -31,8 +27,6 @@ import {
   searchMd,
   mongodb,
   sliders04,
-  telegram,
-  twitter,
   yourlogo,
 } from "../assets";
 
@@ -40,22 +34,22 @@ export const navigation = [
   {
     id: "0",
     title: "ABOUT",
-    url: "#features",
+    url: "#about",
   },
   {
     id: "1",
     title: "SKILLS",
-    url: "#pricing",
+    url: "#skills",
   },
   {
     id: "2",
     title: "PROJECTS",
-    url: "#how-to-use",
+    url: "#projects",
   },
   {
     id: "3",
     title: "CONTACT",
-    url: "#roadmap",
+    url: "#contact",
   },
   {
     id: "4",
@@ -75,7 +69,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [html, css, javascript, react, nodejs];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -246,11 +240,12 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "To-Do List",
+    text: "A responsive To-Do List application using HTML, CSS, and JavaScript. The app stores tasks in local storage, ensuring data persistence across sessions.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
+    webUrl: "https://multiprocessingexceptional.github.io/Projects/",
   },
   {
     id: "1",
@@ -259,6 +254,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
+    webUrl: "",
     light: true,
   },
   {
@@ -268,5 +264,6 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
+    webUrl: "",
   },
 ];

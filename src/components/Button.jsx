@@ -1,7 +1,7 @@
 const Button = ({ className, href, onClick, children, px, white }) => {
-  const classes = `button bg-gradient-to-br from-[#D906F4] to-[#180096] rounded-lg relative inline-flex items-center justify-center h-11 transition-colors hover:text-black ${
+  const classes = `button border-[2px] border-[#BD70D1] rounded-lg relative inline-flex items-center justify-center h-11 transition-colors text-[#B9B4C7] hover:text-[#fff] ${
     px || "px-7"
-  } ${white ? "text-n-8" : "text-n-1"} ${className || ""}`;
+  } ${white ? "text-n-8" : "text-[#B9B4C7]"} ${className || ""}`;
   const spanClasses = "relative z-10";
 
   const renderButton = () => (

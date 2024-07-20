@@ -1,5 +1,5 @@
 const Button2 = ({ className, href, onClick, children, px, white }) => {
-    const classes = `button bg-[#AC6AFF]  rounded-lg text-[0.7rem] cursor-pointer relative inline-flex items-center justify-center h-11 transition-colors text-black ${
+    const classes = `button bg-[#AC6AFF]  rounded-lg text-[0.7rem] cursor-pointer relative inline-flex items-center justify-center h-11 transition-colors hover:text-black ${
       px || "px-7"
     } ${white ? "text-n-8" : "text-n-1"} ${className || ""}`;
     const spanClasses = "relative z-10";
