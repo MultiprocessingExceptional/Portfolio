@@ -8,7 +8,8 @@ import Button2 from "./ButtonIcon";
 const Benefits = () => {
   return (
     <Section id="projects">
-      <div className="container relative z-2 mt-6">
+      <div className="container relative y
+      z-2 mt-6">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
           title="Dive into My Projects"
@@ -31,7 +32,7 @@ const Benefits = () => {
                   Explore
                 </Button2>
 
-                </div>
+                </div> 
               </div>
 
               {item.light && <GradientLight />}
