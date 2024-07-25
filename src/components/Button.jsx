@@ -1,4 +1,4 @@
-const Button = ({ className, href, onClick, children, px, white }) => {
+const Button = ({ className, href, onClick, children, px, white, openInNewTab }) => {
   const classes = `button border-[2px] border-[#BD70D1] rounded-lg relative inline-flex items-center justify-center h-11 transition-colors text-[#B9B4C7] hover:text-[#fff] ${
     px || "px-7"
   } ${white ? "text-n-8" : "text-[#B9B4C7]"} ${className || ""}`;
@@ -11,7 +11,7 @@ const Button = ({ className, href, onClick, children, px, white }) => {
   );
 
   const renderLink = () => (
-    <a href={href} className={classes}>
+    <a href={href} className={classes} target={openInNewTab ? "_blank" : "_self"}>
       <span className={spanClasses}>{children}</span>
     </a>
   );

@@ -1,6 +1,6 @@
+import React from 'react';
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-
 import { logo } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
@@ -45,7 +45,7 @@ const Header = () => {
             openNavigation ? "flex" : "hidden" 
           } fixed top-[5rem] flex justify-center left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
-          <div className="relative z-2 flex flex-col lg:mr-24 items-center justify-center lg:flex-row">
+          <div className="relative z-2 flex flex-col items-center justify-center lg:flex-row">
             {navigation.map((item) => (
               <a
                 key={item.id}
@@ -67,11 +67,11 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        <Button className="hidden font-sans mr-2 lg:flex" href="./public.Resume.pdf">
+        <Button className="hidden font-sans mr-2 lg:flex"  href="/Portfolio/resume.pdf" openInNewTab>
           Resume
         </Button>
 
-        <Button className="hidden font-sans lg:flex" href="#login">
+        <Button className="hidden font-sans lg:flex" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=sijinsaji14@gmail.com&su=&body=Hello%20[Your%20Name],%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20[reason%20for%20contact].%0D%0A%0D%0ARegards,%0D%0A[Your%20Name]">
           Mail Me
         </Button>
 

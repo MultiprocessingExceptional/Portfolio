@@ -1,51 +1,32 @@
 import Section from "./Section";
 import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
-import PricingList from "./PricingList";
-import { LeftLine, RightLine } from "./design/Pricing";
+import SocialMediaIcons from "./SocialMediaIcons";
 
 const Pricing = () => {
   return (
-    <Section className="overflow-hidden" id="contact">
-      <div className="container relative z-2">
-        <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
+    <Section crosses className="overflow-hidden" id="contact">
+        <Heading
+          className="md:max-w-md lg:max-w-2xl lg:mt-[-4rem] mt-[1rem]"
+          title="&nbsp;&nbsp;&nbsp;Let's Connect"
+        />
+      <div className="container relative z-2 text-center">
+        <div className="relative flex flex-col justify-center lg:flex-row mt-[-4rem]">
           <img
             src={smallSphere}
             className="relative z-1"
-            width={255}
-            height={255}
+            width={500}
+            height={500}
             alt="Sphere"
           />
-          <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-            <img
-              src={stars}
-              className="w-full"
-              width={950}
-              height={400}
-              alt="Stars"
-            />
-          </div>
+          <div></div>
         </div>
 
         <Heading
-          tag="Get started with Brainwave"
-          title="Pay once, use forever"
+          tag="Contact me to discuss opportunities or collaborations"
+          title="SIJIN SAJI JOHN"
         />
-
-        <div className="relative">
-          <PricingList />
-          <LeftLine />
-          <RightLine />
-        </div>
-
-        <div className="flex justify-center mt-10">
-          <a
-            className="text-xs font-code font-bold tracking-wider uppercase border-b"
-            href="/pricing"
-          >
-            See the full details
-          </a>
-        </div>
+        <SocialMediaIcons />
       </div>
     </Section>
   );

@@ -249,8 +249,8 @@ export const benefits = [
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Project 2",
+    text: "This project is currently under development. We’re working hard to bring new features and improvements. Stay tuned for updates!",
     backgroundUrl: "./benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -259,8 +259,8 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Project 3",
+    text: "This project is currently under development. We’re working hard to bring new features and improvements. Stay tuned for updates!",
     backgroundUrl: "./benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
