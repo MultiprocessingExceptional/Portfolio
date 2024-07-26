@@ -44,22 +44,22 @@ const Hero = () => {
                     alt="profile"
                     className="rounded-lg size-44 md:size-72"
                   />
-                  <p className="text-justify text-sm md:text-base mx-8">
-                    I am a passionate Frontend Developer proficient in HTML,
+                  <div className="text-justify text-sm md:text-base mx-8">
+                    <p>I am a passionate Frontend Developer proficient in HTML,
                     CSS, JavaScript, Sass, Tailwind CSS, and React. With a focus
                     on creating intuitive and visually appealing web
                     applications, I excel in transforming design concepts into
                     responsive and user-friendly interfaces. Driven by a
                     commitment to clean and efficient coding practices, I
                     leverage my expertise in Tailwind CSS to deliver sleek and
-                    optimized designs. <br />
-                    <br /> I actively contribute to the tech community through
+                    optimized designs.</p>
+                    <br /> <p className="hidden lg:block">I actively contribute to the tech community through
                     engaging posts on LinkedIn, where I share insights and humor
                     to foster connections and discussions. As a dedicated
                     professional, I am enthusiastic about continuous learning
                     and seek opportunities to further develop my skills in
-                    frontend development.
-                  </p>
+                    frontend development.</p>
+                  </div>
                 </div>
               </div>
             </div>

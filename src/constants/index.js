@@ -53,14 +53,8 @@ export const navigation = [
   },
   {
     id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
+    title: "Mail",
+    url: "https://mail.google.com/mail/?view=cm&fs=1&to=sijinsaji14@gmail.com&su=&body=Hello%20[Your%20Name],%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20[reason%20for%20contact].%0D%0A%0D%0ARegards,%0D%0A[Your%20Name]",
     onlyMobile: true,
   },
 ];

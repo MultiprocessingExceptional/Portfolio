@@ -2,6 +2,7 @@ import Section from "./Section";
 import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 import SocialMediaIcons from "./SocialMediaIcons";
+import ContactFrom from "./Contact";
 
 const Pricing = () => {
   return (
@@ -11,15 +12,15 @@ const Pricing = () => {
           title="&nbsp;&nbsp;&nbsp;Let's Connect"
         />
       <div className="container relative z-2 text-center">
-        <div className="relative flex flex-col justify-center lg:flex-row mt-[-4rem]">
+        <div className="relative flex flex-col justify-center items-center lg:flex-row mt-[-4rem] lg:gap-2 mb-10 lg:mb-2">
           <img
             src={smallSphere}
             className="relative z-1"
-            width={500}
-            height={500}
+            width={550}
+            height={550}
             alt="Sphere"
           />
-          <div></div>
+          <ContactFrom />
         </div>
 
         <Heading
