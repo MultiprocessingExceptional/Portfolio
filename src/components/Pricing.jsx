@@ -2,7 +2,7 @@ import Section from "./Section";
 import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 import SocialMediaIcons from "./SocialMediaIcons";
-import ContactFrom from "./Contact";
+import ContactForm from "./Contact";
 
 const Pricing = () => {
   return (
@@ -12,7 +12,7 @@ const Pricing = () => {
           title="&nbsp;&nbsp;&nbsp;Let's Connect"
         />
       <div className="container relative z-2 text-center">
-        <div className="relative flex flex-col justify-center items-center lg:flex-row mt-[-4rem] lg:gap-2 mb-10 lg:mb-2">
+        <div className="relative flex flex-col justify-center items-center lg:flex-row mt-[-4rem] lg:gap-2 mb-10 lg:mb-1">
           <img
             src={smallSphere}
             className="relative z-1"
@@ -20,9 +20,9 @@ const Pricing = () => {
             height={550}
             alt="Sphere"
           />
-          <ContactFrom />
-        </div>
+          <ContactForm />
 
+        </div>
         <Heading
           tag="Contact me to discuss opportunities or collaborations"
           title="SIJIN SAJI JOHN"

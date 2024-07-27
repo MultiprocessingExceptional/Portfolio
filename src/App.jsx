@@ -1,25 +1,43 @@
-import ButtonGradient from "./assets/svg/ButtonGradient";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import useAnimation from './useAnimation';
 import Benefits from "./components/Benefits";
 import Collaboration from "./components/Collaboration";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
-import Roadmap from "./components/Roadmap";
-import Services from "./components/Services";
 
 const App = () => {
+  const headerRef = useAnimation();
+  const heroRef = useAnimation();
+  const benefitsRef = useAnimation();
+  const collaborationRef = useAnimation();
+  const pricingRef = useAnimation();
+  const footerRef = useAnimation();
+
   return (
-    <>
-      <div className="pt-[4.75rem] lg:pt-[4rem] overflow-hidden">
-        <Header />
-        <Hero />
-        <Benefits />
-        <Collaboration />
-        <Pricing />
-        <Footer />
+    <Router>
+      <div className="overflow-hidden">
+        <div ref={headerRef} data-animated="false">
+          <Header />
+        </div>
+        <div ref={heroRef} data-animated="false">
+          <Hero />
+        </div>
+        <div ref={benefitsRef} data-animated="false">
+          <Benefits />
+        </div>
+        <div ref={collaborationRef} data-animated="false">
+          <Collaboration />
+        </div>
+        <div ref={pricingRef} data-animated="false">
+          <Pricing />
+        </div>
+        <div ref={footerRef} data-animated="false">
+          <Footer />
+        </div>
       </div>
-    </>
+    </Router>
   );
 };
 
