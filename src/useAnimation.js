@@ -12,7 +12,7 @@ const useAnimation = (isEnabled = true) => {
     const options = {
       root: null, // viewport
       rootMargin: '0px',
-      threshold: 0.1, // trigger when 10% of the element is visible
+      threshold: 0, // trigger when 10% of the element is visible
     };
 
     const handleIntersection = (entries) => {
