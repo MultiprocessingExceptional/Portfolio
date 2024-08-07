@@ -239,7 +239,7 @@ export const benefits = [
     backgroundUrl: "./benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
-    webUrl: "https://multiprocessingexceptional.github.io/Projects/",
+    webUrl: "https://multiprocessingexceptional.github.io/Todo-Manager/",
   },
   {
     id: "1",
